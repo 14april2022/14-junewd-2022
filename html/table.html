@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    9377024392
+    <!-- 
+        tr => table row 
+        td => table data
+    -->
+    <!-- 3 rows , 4 columns  -->
+    <!-- 
+        cellpadding -> inner space
+        cellspacing -> outer space
+     -->
+
+    <!-- 
+      tabular layout
+      table 
+      tr
+      th
+      td
+      thead
+      tbody
+      tfoot
+      -->
+    <table
+      border="1"
+      width="75%"
+      align="center"
+      cellpadding="10"
+      cellspacing="0"
+    >
+      <thead bgcolor="skyblue">
+        <tr>
+          <th colspan="2">Employee Details</th>
+          <th colspan="4">Personal Details</th>
+        </tr>
+        <tr>
+          <th>Sr no</th>
+          <th>Name</th>
+          <th>Mobile Number</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody bgcolor="orange">
+        <tr>
+          <td>1</td>
+          <td>Parth</td>
+          <td>1234567890</td>
+          <td>Lorem ipsum dolor sit amet consectetur.</td>
+          <td rowspan="2">Surat</td>
+          <td rowspan="2">Gujrat</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Raj</td>
+          <td>9234567890</td>
+          <td>Lorem ipsum dolor sit amet consectetur.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mansi</td>
+          <td>7234567890</td>
+          <td>Lorem ipsum dolor sit amet consectetur.</td>
+          <td>Vapi</td>
+          <td>Gujrat</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Nikunj</td>
+          <td>6234567890</td>
+          <td>Lorem ipsum dolor sit amet consectetur.</td>
+          <td>Daman</td>
+          <td>Daman</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Alfiya</td>
+          <td>4234567890</td>
+          <td>Lorem ipsum dolor sit amet consectetur.</td>
+          <td>Surat</td>
+          <td>Gujrat</td>
+        </tr>
+      </tbody>
+      <tfoot bgcolor="lightgreen">
+        <tr>
+          <td colspan="6">Total Emp : 5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

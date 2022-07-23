@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+        transition: 0.6s;
+      }
+
+      .box1 {
+        background-color: skyblue;
+      }
+
+      .box1:hover {
+        /* transform: perspective(800px) rotateZ(180deg); */
+        /* transform: perspective(100px) rotateX(30deg) rotateY(50deg)
+          rotateZ(100deg);  */
+        /* transform: rotate3d(x , y ,z , deg); */
+        transform: perspective(800px) rotate3d(0, 0, 1, 360deg);
+      }
+
+      /* transform 4 type  */
+      /*
+        1 -> rotate
+        2 -> translate
+        3 -> scale
+        4 -> skew
+      */
+
+      .box2 {
+        background-color: greenyellow;
+      }
+
+      .box2:hover {
+        /* transform: perspective(400px) translateZ(-1000px); */
+        /* transform: translate(10%, 0px); */
+        transform: perspective(700px) translate3d(0px, -50px, 300px);
+      }
+
+      .box3 {
+        background-color: orange;
+      }
+
+      .box3:hover {
+        /* scaleX , Y , scale  */
+        transform: scale(2);
+      }
+
+      .box4 {
+        background-color: skyblue;
+        transform: skew(10deg);
+        padding: 10px;
+        box-shadow: 10px 10px 10px blue;
+      }
+
+      .box4 h1 {
+        /* transform: skew(-10deg) translate(-25%, -70%); */
+        text-shadow: 0px 1px 4px blue;
+        color: white;
+      }
+
+      .box4:hover {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box4">
+      <h1>SKEW</h1>
+    </div>
+    <div class="box box1">
+      <h1>Rotate</h1>
+    </div>
+    <div class="box box2">
+      <h1>Translate</h1>
+    </div>
+    <div class="box box3">
+      <h1>Scale</h1>
+    </div>
+  </body>
+</html>

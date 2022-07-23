@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: skyblue;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        margin: 100px auto;
+        transition-duration: 1s;
+        /* box-shadow: x y spreading color; */
+        /* box-shadow: -10px -10px 20px black, 10px 10px 20px red; */
+        border-radius: 19px;
+        background: #e0e0e0;
+        box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+        border-radius: 19px;
+        background: skyblue;
+        box-shadow: 12px 12px 24px rgb(109, 143, 157),
+          -12px -12px 24px rgb(22, 61, 76);
+      }
+
+      .box:hover {
+        /* box-shadow: -10px -10px 20px black, 10px 10px 20px red; */
+        /* box-shadow: 10px 100px 40px red; */
+        /* box-shadow: inset 10px 10px 10px black, inset -10px -10px 10px red,
+          10px 10px 10px black, -10px -10px 10px red; */
+        /* neumorphism */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Shadow</h2>
+    </div>
+  </body>
+</html>

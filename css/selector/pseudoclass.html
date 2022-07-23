@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      /* :hover  */
+      h1 {
+        transition-duration: 1s;
+      }
+
+      h1:hover {
+        background-color: black;
+        color: red;
+        font-size: 40px;
+      }
+
+      .btn1 {
+        margin: 50px;
+        padding: 10px 30px;
+        background-color: transparent;
+        border: 1px solid red;
+        color: red;
+        transition-duration: 1s;
+      }
+
+      .btn1:hover {
+        background-color: red;
+        color: white;
+      }
+
+      input:focus {
+        /* background-color: pink; */
+        color: red;
+      }
+
+      .btn2:focus {
+        background-color: yellow;
+      }
+
+      .btn3:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .btn3:focus {
+        background-color: orange;
+      }
+
+      .btn3:active {
+        background-color: green;
+      }
+
+      a:visited {
+        color: grey;
+      }
+
+      /* hover , focus , :active , visited  */
+
+      table {
+        background-color: skyblue;
+        border: 1px solid black;
+        margin: 200px auto;
+        border-collapse: collapse;
+      }
+      table tr td {
+        border: 1px solid black;
+        padding: 10px 30px;
+      }
+
+      /* table tr:first-child {
+        background-color: yellowgreen;
+      }
+
+      table tr:last-child {
+        background-color: aliceblue;
+      } */
+
+      /* table tr td:first-child {
+        background-color: orange;
+      } */
+
+      /* table tr:nth-child(even) {
+        background-color: orange;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <a href="https://caspa.liaisoncas.com">Unknown Website</a>
+    <input type="text" />
+    <button class="btn1">Login</button>
+    <button class="btn2">Focus</button>
+    <button class="btn3">Active</button>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>Parth</td>
+        <td>Singh</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Parth</td>
+        <td>Singh</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Parth</td>
+        <td>Singh</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Parth</td>
+        <td>Singh</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Parth</td>
+        <td>Singh</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Parth</td>
+        <td>Singh</td>
+        <td>Surat</td>
+      </tr>
+    </table>
+  </body>
+</html>
