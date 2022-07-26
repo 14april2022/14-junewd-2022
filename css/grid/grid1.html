@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90%;
+            margin: 100px auto;
+            display: grid;
+            grid-template-rows: 200px 200px;
+            /* fractinal unit */
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 2px solid black;
+            gap: 10px 40px;
+        }
+
+        .box1{
+            background-color: springgreen;
+        }
+
+        .box2{
+            background-color: rgb(221, 147, 193);
+        }
+
+        .box3{
+            background-color: aqua;
+        }
+
+        .box4{
+            background-color: blue;
+        }
+
+        .box5{
+            background-color: chartreuse;
+        }
+
+        .box6{
+            background-color: rgb(151, 164, 202);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!-- flex => 1 direction , row / column  -->
+    <!-- 
+        grid => is a two way
+        row and column
+     -->
+     <div class="container">
+        <div class="box box1">
+            <h1>Box 1</h1>
+        </div>
+        <div class="box box2">
+            <h1>Box 2</h1>
+        </div>
+        <div class="box box3">
+            <h1>Box 3</h1>
+        </div>
+        <div class="box box4">
+            <h1>Box 4</h1>
+        </div>
+        <div class="box box5">
+            <h1>Box 5</h1>
+        </div>
+        <div class="box box6">
+            <h1>Box 6</h1>
+        </div>
+     </div>
+</body>
+</html>
