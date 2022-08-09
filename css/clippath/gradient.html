@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* background-color: yellow; */
+      }
+      .box {
+        width: 100%;
+        height: 100vh;
+        /* margin: 200px auto; */
+        /* border-radius: 50%; */
+        /* background-image: linear-gradient(black, red); */
+        /* background-image: linear-gradient(black, red, black, red); */
+        /* for direction */
+        /* background-image: linear-gradient(
+          to top right,
+          rgb(218, 218, 218),
+          transparent
+        ); */
+        /* background-image: linear-gradient(to top right, yellow 50%, orange 50%); */
+        /* background-image: repeating-linear-gradient(
+          to right,
+          orange 10%,
+          transparent 20%
+        ); */
+        /* box-shadow: 10px 10px 10px black; */
+        /* background-image: repeating-radial-gradient(
+          circle at 50% 50%,
+          red 10%,
+          blue 20%,
+          green 30%,
+          pink 40%
+        ); */
+        background-image: linear-gradient(
+            rgba(255, 0, 0, 0.124) 10%,
+            rgba(0, 0, 0, 0.68) 60%
+          ),
+          url(../background/bg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .child-box {
+        width: 300px;
+        height: 400px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- <div class="child-box"></div> -->
+    </div>
+  </body>
+</html>
